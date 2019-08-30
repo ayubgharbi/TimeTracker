@@ -8,12 +8,14 @@ default: &default
 development:
   <<: *default
   database: timetracker_development
-  host: localhost 
+  host: '' 
+  port: 5432
 
 test:
   <<: *default
   database: timetracker_test
-  host: localhost
+  host: ''
+  port: 5432
 
 production:
   <<: *default
